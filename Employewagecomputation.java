@@ -1,28 +1,38 @@
 public class Employewagecomputation{
+        public static final int IS_FULL_TIME =1;
+        public static final int IS_PART_TIME =2;
+        public static final int Empwage =20;
+        public static final int Working_Days_Per_Month=20;
+        public static final int Working_Hours_Per_Month=100;
 
-public static void main(String args[])
-    {
-        final int IS_PART_TIME = 1;
-        final int IS_FULL_TIME = 2;
-        final int WAGE_PER_HR = 20;
-        int empType = (int) (Math.random() * 100) % 3;
-        int workingHours =0;
-        switch (empType)
+public static void main(String[] args)
+{       
+        int emphrs=0;
+        int totalempwage=0;
+        int monthlywage=0;
+        int empday=0;
+        int emphour =0;
+        while(empday < Working_Days_Per_Month && emphour <= Working_Hours_Per_Month)
         {
-            case IS_FULL_TIME:
-                System.out.println("Employee is Present Full time");
-                workingHours = 8;
-                break;
-            case IS_PART_TIME:
-                System.out.println("Employee is Present Part time");
-                workingHours = 4;
-                break;
-            default:
-                System.out.println("Employee is Absent");
+        empday++;
+        int empcheck= (int)Math.floor(Math.random() * 10 ) % 3 ;
+        switch (empcheck){
+          case IS_FULL_TIME:
+                   emphrs=8;
+                   break;
+          case IS_PART_TIME:
+                   emphrs=4;
+                   break;
+          default:
+                   emphrs=0;
         }
-        int wage = workingHours * WAGE_PER_HR;
-        System.out.println("Employee Daily Wage is " + wage);
-    }
+        emphour+=emphrs;
+        totalempwage=emphrs*Empwage;
+        monthlywage+=totalempwage;
+        System.out.println("#day : "+empday+"     "+"emphours : "+emphour+"      "+"empwage : " +totalempwage);
+}
+System.out.println("20 days and 100 hours of employwage is  :" +monthlywage);
+  }
 
 }
 
