@@ -1,38 +1,41 @@
 public class Employewagecomputation{
-        public static final int IS_FULL_TIME =1;
-        public static final int IS_PART_TIME =2;
-        public static final int Empwage =20;
-        public static final int Working_Days_Per_Month=20;
-        public static final int Working_Hours_Per_Month=100;
 
-public static void main(String[] args)
-{       
-        int emphrs=0;
-        int totalempwage=0;
-        int monthlywage=0;
-        int empday=0;
-        int emphour =0;
-        while(empday < Working_Days_Per_Month && emphour <= Working_Hours_Per_Month)
-        {
-        empday++;
-        int empcheck= (int)Math.floor(Math.random() * 10 ) % 3 ;
-        switch (empcheck){
+       public static final int IS_FULL_TIME =2;
+       public static final int IS_PART_TIME =1;
+       public static final int Emp_Rate_Per_Hour =20;
+       public static final int Num_Of_Working_Days=2;
+       public static final int Max_Hrs_In_Month=10;
+
+   public static int computeEmpWage () {
+     //variables
+        int empHrs = 0, totalEmpHrs = 0,totalWorkingDays = 0;
+     
+     //computation
+        while(totalEmpHrs <= Max_Hrs_In_Month &&
+              totalWorkingDays < Num_Of_Working_Days) {
+        totalWorkingDays++;
+        int empCheck= (int) Math.floor(Math.random() * 10 ) % 3 ;
+        switch (empCheck) {
           case IS_FULL_TIME:
-                   emphrs=8;
+                   empHrs=8;
                    break;
           case IS_PART_TIME:
-                   emphrs=4;
+                   empHrs=4;
                    break;
           default:
-                   emphrs=0;
+                   empHrs=0;
         }
-        emphour+=emphrs;
-        totalempwage=emphrs*Empwage;
-        monthlywage+=totalempwage;
-        System.out.println("#day : "+empday+"     "+"emphours : "+emphour+"      "+"empwage : " +totalempwage);
+        totalEmpHrs += empHrs;
+        System.out.println("Day# : " + totalWorkingDays + " Emp Hr: " +empHrs);
 }
-System.out.println("20 days and 100 hours of employwage is  :" +monthlywage);
-  }
+ int totalEmpWage = totalEmpHrs * Emp_Rate_Per_Hour;
+ System.out.println("Total Emp Wage: " + totalEmpWage);
+ return totalEmpWage;
 
+}
+
+public static void main(String[] args) {
+    computeEmpWage ();
+  }
 }
 
