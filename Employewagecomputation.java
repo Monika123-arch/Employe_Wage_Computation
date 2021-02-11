@@ -1,4 +1,5 @@
 public class Employewagecomputation{
+
 public static void main(String[] args)
 {
         int IS_FULL_TIME =1;
@@ -16,5 +17,6 @@ public static void main(String[] args)
         totalempwage=emphrs*empwage;
         System.out.println("empwage : " +totalempwage );
  }
+
 }
 
