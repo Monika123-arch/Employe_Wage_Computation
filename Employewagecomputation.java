@@ -1,5 +1,6 @@
 public class Employewagecomputation{
 
+
    public static void main(String args[])
     {
         final int PART_TIME = 1;
@@ -27,6 +28,8 @@ public class Employewagecomputation{
             totalWage += wage;
         }
         System.out.println("Total wage for a month is " + totalWage);        
+
     }
 
 }
+
