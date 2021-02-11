@@ -1,6 +1,5 @@
 public class Employewagecomputation{
 
-
    public static void main(String args[])
     {
         final int PART_TIME = 1;
