@@ -1,9 +1,10 @@
 public class Employewagecomputation{
-        public static final int IS_FULL_TIME =2;
-        public static final int IS_PART_TIME =1;
-        public static final int Emp_Rate_Per_Hour =20;
-        public static final int Num_Of_Working_Days=2;
-        public static final int Max_Hrs_In_Month=10;
+
+       public static final int IS_FULL_TIME =2;
+       public static final int IS_PART_TIME =1;
+       public static final int Emp_Rate_Per_Hour =20;
+       public static final int Num_Of_Working_Days=2;
+       public static final int Max_Hrs_In_Month=10;
 
    public static int computeEmpWage () {
      //variables
