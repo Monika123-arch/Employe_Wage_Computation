@@ -1,4 +1,5 @@
 public class Employewagecomputation{
+
 public static void main(String args[])
     {
         final int IS_PART_TIME = 1;
@@ -22,5 +23,6 @@ public static void main(String args[])
         int wage = workingHours * WAGE_PER_HR;
         System.out.println("Employee Daily Wage is " + wage);
     }
+
 }
 
