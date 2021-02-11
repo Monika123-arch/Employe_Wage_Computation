@@ -6,8 +6,7 @@ public class Employewagecomputation{
         public static final int Working_Hours_Per_Month=100;
 
 public static void main(String[] args)
-{
-
+{       
         int emphrs=0;
         int totalempwage=0;
         int monthlywage=0;
@@ -33,5 +32,7 @@ public static void main(String[] args)
         System.out.println("#day : "+empday+"     "+"emphours : "+emphour+"      "+"empwage : " +totalempwage);
 }
 System.out.println("20 days and 100 hours of employwage is  :" +monthlywage);
+  }
+
 }
-}
+
