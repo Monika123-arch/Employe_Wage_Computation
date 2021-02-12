@@ -51,4 +51,7 @@ public class Employewagecomputation {
         Reliance.computeEmpWage();
         System.out.println(Reliance);
     }
-}
+
+       
+
+
