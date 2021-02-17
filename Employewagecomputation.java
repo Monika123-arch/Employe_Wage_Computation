@@ -22,7 +22,6 @@ class CompanyEmpWage {
 	public String toString() {
 		return "Total Employee wage for Company: " +company+" is " +totalEmpWage;
 	}
-}
 
 public class employewagecomputation {
     public static final int PRESENT_FULL_TIME = 2;
