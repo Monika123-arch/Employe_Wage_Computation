@@ -1,3 +1,4 @@
+
 class CompanyEmpWage {
 	public final String company;
 	public final int empRatePerHour;
@@ -73,3 +74,4 @@ public class employewagecomputation {
     	empwagecompute.computeEmpWage();
     }
 }
+
