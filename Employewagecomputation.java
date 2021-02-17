@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 class CompanyEmpWage {
+
         public final String company;
         public final int empRatePerHour;
         public final int numOfWorkingDays;
@@ -23,6 +24,28 @@ class CompanyEmpWage {
                 return "Total Employee wage for Company: " +company+" is " +totalEmpWage;
         }
 }
+
+	public final String company;
+	public final int empRatePerHour;
+	public final int numOfWorkingDays;
+	public final int maxHoursPerMonth;
+	public int totalEmpWage;
+	
+	public CompanyEmpWage(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth) {
+		this.company = company;
+		this.empRatePerHour = empRatePerHour;
+		this.numOfWorkingDays = numOfWorkingDays;
+		this.maxHoursPerMonth = maxHoursPerMonth;
+	}
+	
+	public void setTotalEmpWage(int totalEmpWage) {
+		this.totalEmpWage = totalEmpWage;
+	}
+	
+	public String toString() {
+		return "Total Employee wage for Company: " +company+" is " +totalEmpWage;
+	}
+
 
 public class employewagecomputation {
     public static final int PRESENT_FULL_TIME = 2;
